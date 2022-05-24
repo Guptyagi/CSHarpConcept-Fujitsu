@@ -9,7 +9,34 @@ namespace Fujitsu.CSharpProject.ARR
     internal class DemoArray
     {
         static void Main(String[] args)
+
+
         {
+            //Another way of handling loop ForEach Loop
+
+            int[] nn = { 100,90,80,70,60,50,40,30,20,10 };
+
+            foreach (int x in nn)
+            {
+                if (x >= 50)
+                {
+                    Console.WriteLine(x);
+
+                }
+                
+            }
+
+
+
+            int[] n = { 10, 20, 30, 40, 50, 60, 70, 80 };
+
+            int l = n.Length;
+
+            for (int i = 0; i < l; i++)
+            {
+
+                Console.WriteLine(n[i]);
+            }
             //Print numbers
 
             int[] NUM = new int[10];
@@ -60,6 +87,13 @@ namespace Fujitsu.CSharpProject.ARR
             {
                 Console.WriteLine("Grade is F");
             }
+
+            //For Loop
+
+
+            
+
+
             
 
 
