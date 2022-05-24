@@ -8,7 +8,7 @@ namespace Fujitsu.CSharpProject.ARR
 {
     internal class DemoArray
     {
-        static void Main(String[] args)
+        static void Main2(String[] args)
 
 
         {
