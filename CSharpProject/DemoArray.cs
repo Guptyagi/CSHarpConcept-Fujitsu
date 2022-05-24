@@ -34,6 +34,8 @@ namespace Fujitsu.CSharpProject.ARR
 
             //If Else condition, Logical Operator
 
+            //Grade based on Marks
+
             int Marks = Convert.ToInt32(Console.ReadLine());
 
             if (Marks >= 90)
