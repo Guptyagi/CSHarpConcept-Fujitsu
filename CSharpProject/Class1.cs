@@ -12,12 +12,14 @@ namespace CSharpProject
 
         
 
-        static void Main(String[] args)
+        static void Main13(String[] args)
         {
-            double res=Area.AreaCalculation(5);
+
+            Area obj= new Area();
+            double res=obj.AreaCalculation(5);
             Console.WriteLine("Area of Circle is : " + res);
 
-            res = Area.AreaCalculation(10);
+            res = obj.AreaCalculation(10);
             Console.WriteLine("Area of Circle is : " + res);
 
             double output=Area.AreaOfTriangle(10.2, 14.9);

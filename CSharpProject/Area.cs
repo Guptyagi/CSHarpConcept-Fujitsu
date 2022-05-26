@@ -8,7 +8,7 @@ namespace CSharpProject
 {
     internal class Area
     {
-        public static double AreaCalculation(int r)
+        public  double AreaCalculation(int r)
         {
             double area = 3.14 * r * r;
             return area;
