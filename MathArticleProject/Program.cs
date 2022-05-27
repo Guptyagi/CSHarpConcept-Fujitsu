@@ -16,10 +16,11 @@ namespace MathArticleProject
         {
 
             ChromeDriver driver = new ChromeDriver();
+            driver.Url = "https://www.goto.com/meeting";
             //driver.Url = "https://opensource-demo.orangehrmlive.com/";
-            driver.Url = "https://www.facebook.com";
+            //driver.Url = "https://www.facebook.com";
             driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait=TimeSpan.FromSeconds(30);
+            driver.Manage().Timeouts().ImplicitWait=TimeSpan.FromSeconds(50);
             /*String  curentURL=driver.Url;
             Console.WriteLine(curentURL);
 
@@ -36,7 +37,7 @@ namespace MathArticleProject
             driver.FindElement(By.Id("btnLogin")).Click();
             driver.FindElement(By.Id("welcome")).Click();
             driver.FindElement(By.LinkText("Logout"));*/
-            driver.Url = "https://www.facebook.com";
+            /*driver.Url = "https://www.facebook.com";
             driver.FindElement(By.LinkText("Create New Account")).Click();
             driver.FindElement(By.Name("firstname")).SendKeys("John");
             driver.FindElement(By.Name("lastname")).SendKeys("Wick");
@@ -55,7 +56,30 @@ namespace MathArticleProject
 
 
             driver.FindElement(By.XPath("//input[@value='-1']")).Click();
-            driver.FindElement(By.Name("websubmit")).Click();
+            driver.FindElement(By.Name("websubmit")).Click();*/
+
+            //Day 5 Assignment
+
+            driver.FindElement(By.XPath("//button[text()='Accept Recommended Settings']")).Click();
+            driver.FindElement(By.LinkText("Try Free")).Click();
+            driver.FindElement(By.Id("first-name")).SendKeys("John");
+
+            driver.FindElement(By.Id("last-name")).SendKeys("Wick");
+            driver.FindElement(By.Id("login__email")).SendKeys("john@gmail.com");
+            //driver.FindElement(By.ClassName("select__select - wrapper")).Click();
+
+            SelectElement selectCompSize = new SelectElement(driver.FindElement(By.Id("CompanySize")));
+
+            selectCompSize.SelectByText("10 - 99");
+
+            driver.FindElement(By.XPath("//button[text()='Start My Trial']")).Click();
+
+            driver.Quit();
+            
+
+
+
+
 
 
 
