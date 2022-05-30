@@ -67,11 +67,15 @@ namespace SeleniumConcepts
 
             //ENter Date
 
-            driver.FindElement(By.Id("bill-date-long")).SendKeys("14/04/2022");
+            driver.ExecuteScript("document.querySelector('#bill-date-long').value = '13/05/2000'");
+
+            //driver.FindElement(By.Id("bill-date-long")).SendKeys("14/04/2022");
 
             Thread.Sleep(4000);
 
             driver.FindElement(By.XPath("//b[contains(text(),'Terms and Conditions')]")).Click();
+
+            
 
 
             //Click on Proceed
